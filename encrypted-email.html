@@ -1,0 +1,50 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="impress-demo.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body class="impress-not-supported">
+<div id="impress">
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <q>Encrypted email</q>
+	    <ul>
+	      <li>Thunderbird</li>
+	      <li>Enigmail</li>
+	      <li>PGP</li>
+	      <li>Share keys</li>
+	    </ul>
+    </div>
+    <div class="step slide" data-x="0" data-y="-1500">
+        <q>Don’t you think that presentations given <strong>in modern browsers</strong> shouldn’t <strong>copy the limits</strong> of ‘classic’ slide decks?</q>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+    </div>
+
+</div>
+<div id="impress-toolbar"></div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+}
+</script>
+<script src="impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
